@@ -1,0 +1,542 @@
+Alexander:
+  glass: cocktail
+  ingredients:
+    cognac: 3
+    brown-creme-de-cacao: 3
+    cream: 3
+  garnish:
+  - nutmeg # TODO!
+Americano:
+  glass: old-fashioned
+  ingredients:
+    campari: 3
+    vermouth: 3
+    soda-water: 1
+  garnish:
+  - half-orange-slice
+Angel Face:
+  glass: cocktail
+  ingredients:
+    gin: 3
+    apricot-brandy: 3
+    calvados: 3
+Aviation:
+  glass: cocktail
+  ingredients:
+    gin: 4.5
+    maraschino: 1.5
+    lemon-juice: 1.5
+B52:
+  glass: shot
+  ingredients:
+    kahlua: 2
+    irish-cream: 2
+    triple-sec: 2
+Bacardi:
+  glass: cocktail
+  ingredients:
+    white-rum: 4.5
+    lime-juice: 2
+    grenadine: 1
+Barracuda:
+  glass: margarita
+  ingredients:
+    dark-rum: 4.5
+    galliano: 1.5
+    pineapple-juice: 6
+    lime-juice: 0.1
+    prosecco: 0.1 # TODO!
+Bellini:
+  glass: champagne-flute
+  ingredients:
+    prosecco: 10
+    peach-puree: 5
+    sparkling-wine: 0 # TODO!
+Between the Sheets:
+  glass: cocktail
+  ingredients:
+    white-rum: 3
+    cognac: 3
+    triple-sec: 3
+    lemon-juice: 2
+Black Russian:
+  glass: old-fashioned
+  ingredients:
+    vodka: 5
+    kahlua: 2
+# Bloody Mary
+Bramble:
+  glass: old-fashioned
+  ingredients:
+    gin: 4
+    lemon-juice: 1.5
+    sugar-syrup: 1
+    blackberry-liqueur: 1.5
+  garnish:
+  - lemon-slice
+  - blackberries # TODO! 2x
+# TODO: Caiparinha
+Casino:
+  glass: cocktail
+  ingredients:
+    gin: 4
+    maraschino: 1
+    orange-bitters: 1
+    lemon-juice: 1
+  garnish:
+  - lemon-twist
+  - cherry
+Champagne Cocktail:
+  glass: champagne-flute
+  ingredients:
+    champagne: 9
+    cognac: 1
+    angostura-bitters: 0.2
+  garnish: #TODO!
+  - sugar-cube
+Clover Club:
+  glass: cocktail
+  ingredients:
+    gin: 4.5
+    raspberry-syrup: 1.5
+    lemon-juice: 1.5
+    egg-white: 0.1
+Cosmopolitan:
+  glass: cocktail
+  ingredients:
+    vodka: 4 #TODO: citron vodka
+    triple-sec: 1.5
+    lime-juice: 1.5
+    cranberry-juice: 3
+  garnish:
+  - lime-slice
+Cuba Libre:
+  glass: highball
+  ingredients:
+    white-rum: 5
+    cola: 12
+    lime-juice: 1
+  garnish:
+  - lime-wedge
+Daiquiri:
+  glass: cocktail
+  ingredients:
+    white-rum: 4.5
+    lime-juice: 2.5
+    sugar-syrup: 1.5
+Dark 'n' Stormy:
+  glass: highball
+  ingredients:
+    dark-rum: 6
+    ginger-ale: 10
+  garnish:
+  - lime-wedge
+Derby:
+  glass: cocktail
+  ingredients:
+    gin: 6
+    peach-bitters: 0.1
+  garnish:
+  - mint-leaves
+Dirty Martini:
+  glass: cocktail
+  ingredients:
+    vodka: 6
+    dry-vermouth: 1
+    olive-juice: 1
+  garnish:
+  - green-olive
+Dry Martini:
+  glass: cocktail
+  ingredients:
+    gin: 6
+    dry-vermouth: 1
+  # TODO: lemon oil / olive?
+Espresso Martini:
+  glass: cocktail
+  ingredients:
+    vodka: 5
+    kahlua: 1
+    coffee: 1.5 #TODO!
+French Connection:
+  glass: old-fashioned
+  ingredients:
+    cognac: 3.5
+    disaronno: 3.5
+French Martini:
+  glass: cocktail
+  ingredients:
+    vodka: 4.5
+    raspberry-liqueur: 1.5
+    pineapple-juice: 1.5
+  # TODO: lemon oil?
+Gin Fizz:
+  glass: highball
+  ingredients:
+    gin: 4.5
+    lemon-juice: 3
+    sugar-syrup: 1
+    soda-water: 8
+  garnish:
+  - lemon-slice
+God Father:
+  glass: old-fashioned
+  ingredients:
+    whiskey: 3.5
+    disaronno: 3.5
+God Mother:
+  glass: old-fashioned
+  ingredients:
+    vodka: 3.5
+    disaronno: 3.5
+Golden Dream:
+  glass: cocktail
+  ingredients:
+    galliano: 2
+    triple-sec: 2
+    orange-juice: 2
+    cream: 1
+Grasshopper:
+  glass: cocktail
+  ingredients:
+    white-creme-de-cacao: 3
+    green-creme-de-menthe: 3
+    cream: 3
+Harvey Wallbanger:
+  glass: highball
+  ingredients:
+    vodka: 4.5
+    galliano: 1.5
+    orange-juice: 9
+  garnish:
+  - orange-slice
+  - cherry
+Hemmingway Special:
+  glass: cocktail
+  ingredients:
+    white-rum: 6
+    grapefruit-juice: 4
+    maraschino: 1.5
+    lime-juice: 1.5
+  # TODO: large!
+Horse's Neck:
+  glass: highball
+  ingredients:
+    cognac: 4
+    ginger-ale: 12
+    # TODO
+  garnish:
+  - lemon-twist
+Irish Coffee:
+  glass: hot-drink
+  ingredients:
+    whiskey: 4
+    coffee: 9
+    cream: 3
+    sugar-syrup: 1
+John Collins:
+  class: collins # TODO?
+  ingredients:
+    gin: 4.5
+    lemon-juice: 3
+    sugar-syrup: 1.5
+    soda-water: 6
+    angostura-bitters: 0.1
+  garnish:
+  - lemon-slice
+  - cherry
+Kamikaze:
+  glass: cocktail
+  ingredients:
+    vodka: 3
+    triple-sec: 3
+    lime-juice: 3
+# TODO: Kir
+Lemon Drop Martini:
+  glass: cocktail
+  ingredients:
+    vodka: 2.5 #TODO: citron vodka?
+    triple-sec: 2
+    lemon-juice: 1.5
+  garnish:
+  - lemon-slice
+Long Island Iced Tea:
+  glass: highball
+  ingredients:
+    tequila: 1.5
+    vodka: 1.5
+    white-rum: 1.5
+    triple-sec: 1.5
+    gin: 1.5
+    lemon-juice: 2.5
+    gomme-syrup: 3
+    cola: 0.1
+  garnish:
+  - lemon-twist
+Mai-tai:
+  glass: highball
+  ingredients:
+    white-rum: 4
+    dark-rum: 2
+    triple-sec: 1.5
+    orgeat-syrup: 1.5
+    lime-juice: 1
+  garnish:
+  - pineapple-slice
+  - mint-leaves
+  - lime-wedge
+Manhattan:
+  glass: cocktail
+  ingredients:
+    whiskey: 5
+    vermouth: 2
+    angostura-bitters: 0.1
+  garnish:
+  - cherry
+Margarita:
+  glass: margarita # TODO!
+  ingredients:
+    tequila: 3.5
+    triple-sec: 2
+    lime-juice: 1.5
+  garnish:
+  - salt # TODO!
+Mary Pickford:
+  glass: cocktail
+  ingredients:
+    white-rum: 6
+    maraschino: 1
+    pineapple-juice: 6
+    grenadine: 1
+    # TODO: large!
+Mimosa:
+  glass: champagne-flute
+  ingredients:
+    champagne: 7.5
+    orange-juice: 7.5
+  garnish:
+  - orange-twist
+# TODO: Mint Julep
+Mojito:
+  glass: collins
+  ingredients:
+    white-rum: 4
+    lime-juice: 3
+    # TODO
+  garnish:
+  - mint-leaves
+  - lemon-slice
+Monkey Gland:
+  glass: cocktail
+  ingredients:
+    gin: 5
+    orange-juice: 3
+    absinthe: 0.1
+    grenadine: 0.1
+    # TODO
+Moscow Mule:
+  glass: highball
+  ingredients:
+    vodka: 4.5
+    ginger-ale: 12
+    lime-juice: 0.5
+  garnish:
+  - lime-slice
+Negroni:
+  glass: old-fashioned
+  garnish:
+  - half-orange-slice
+  ingredients:
+    gin: 3
+    campari: 3
+    sweet-vermouth: 3
+Old Fashioned:
+  glass: old-fashioned
+  ingredients:
+    whiskey: 4.5
+    angostura-bitters: 0.2
+    water: 0.2
+  garnish:
+  - sugar-cube
+  - orange-slice
+  - cherry
+Paradise:
+  gin: 3.5
+  apricot-brandy: 2
+  orange-juice: 1.5
+Pina Colada:
+  glass: hurricane #TODO!
+  ingredients:
+    white-rum: 3
+    pineapple-juice: 9
+    coconut-milk: 3
+  garnish:
+  - pineapple-slice
+  - cherry
+Pisco Sour:
+  glass: old-fashioned
+  ingredients:
+    pisco: 4.5
+    lemon-juice: 3
+    sugar-syrup: 2
+    egg-white: 0.1989898989898 # TODO!
+  garnish:
+  - angostura-bitters #TODO!
+Planter's Punch:
+  glass: highball
+  ingredients:
+    dark-rum: 4.5
+    orange-juice: 3.5
+    pineapple-juice: 3.5
+    lemon-juice: 2
+    grenadine: 1
+    sugar-syrup: 1
+    angostura-bitters: 0.3
+  garnish:
+  - pineapple-slice
+  - cherry
+Porto Flip:
+  glass: cocktail
+  ingredients:
+    cognac: 1.5
+    ruby-port: 4.5
+    egg-yolk: 1 # TODO
+# TODO: Ramos Fizz
+Rose:
+  glass: cocktail
+  ingredients:
+    kirsch: 2
+    dry-vermouth: 4
+    strawberry-syrup: 0.3
+Russian Spring Punch:
+  glass: highball
+  ingredients:
+    vodka: 2.5
+    lemon-juice: 2.5
+    creme-de-cassis: 1.5
+    sugar-syrup: 1
+  garnish:
+  - lemon-slice
+  - blackberry
+Rusty Nail:
+  glass: old-fashioned
+  ingredients:
+    whiskey: 4.5
+    drambuie: 2.5 # TODO?
+  garnish:
+  - lemon-twist
+Sazerac:
+  glass: old-fashioned
+  ingredients:
+    cognac: 5
+    absinthe: 1
+    peychauds-bitters: 0.2
+  garnish: #TODO
+  - lemon-twist
+  - sugar-cube
+Screwdriver:
+  glass: highball
+  ingredients:
+    vodka: 5
+    orange-juice: 10
+  garnish:
+  - orange-slice
+Sea Breeze:
+  glass: highball
+  ingredients:
+    vodka: 4
+    cranberry-juice: 12
+    grapefruit-juice: 3
+  garnish:
+  - lime-wedge
+Sex on the Beach:
+  glass: highball
+  ingredients:
+    vodka: 4
+    peach-schnapps: 2
+    cranberry-juice: 4
+    orange-juice: 4
+  garnish:
+  - orange-slice
+Sidecar:
+  glass: cocktail
+  ingredients:
+    cognac: 5
+    triple-sec: 2
+    lemon-juice: 2
+Singapore Sling:
+  glass: highball
+  ingredients:
+    gin: 3
+    maraschino: 1.5
+    triple-sec: 0.75
+    dom-benedictine: 0.75
+    pineapple-juice: 12
+    lime-juice: 1.5
+    grenadine: 1
+  garnish:
+  - pineapple-slice
+  - cherry
+Spritz Veneziano:
+  glass: old-fashioned
+  ingredients:
+    prosecco: 6
+    aperol: 4
+    soda-water: 1
+  garnish:
+  - half-orange-slice
+Stinger:
+  glass: cocktail
+  ingredients:
+    cognac: 5
+    white-creme-de-menthe: 2
+Tequila Sunrise:
+  glass: highball
+  ingredients:
+    tequila: 4.5
+    orange-juice: 9
+    grenadine: 1.5
+  garnish:
+  - orange-slice
+  - cherry
+# TODO: Tommy's Margarita
+Tuxedo:
+  glass: cocktail
+  ingredients:
+    gin: 3
+    dry-vermouth: 3
+    # TODO
+  garnish:
+  - lemon-twist
+  - cherry
+# TODO: Vampiro
+Vesper:
+  glass: cocktail
+  garnish:
+  - lemon-twist
+  ingredients:
+    gin: 6
+    vodka: 1.5
+    lillet-blonde: 0.75
+Whiskey Sour:
+  glass: old-fashioned
+  ingredients:
+    whiskey: 4.5 # TODO
+    lemon-juice: 3
+    sugar-syrup: 1.5
+  garnish:
+  - half-orange-slice
+  - cherry
+White Lady:
+  glass: cocktail
+  ingredients:
+    gin: 4
+    triple-sec: 3
+    lemon-juice: 2
+Yellow Bird:
+  glass: cocktail
+  ingredients:
+    white-rum: 3
+    galliano: 1.5
+    triple-sec: 1.5
+    lime-juice: 1.5
