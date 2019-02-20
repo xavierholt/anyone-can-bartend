@@ -1,4 +1,4 @@
-tool extends Node2D
+extends Node2D
 
 export (Color) var color = Color(0.5, 0.5, 0.5)
 

@@ -6,13 +6,13 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 20, 40 )
+extents = Vector2( 25, 100 )
 
 [node name="Slot" type="Node2D"]
 
 [node name="Click" type="Area2D" parent="." index="0"]
 
-position = Vector2( 0, -40 )
+position = Vector2( 0, -100 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -29,6 +29,7 @@ shape = SubResource( 1 )
 
 [node name="Art" type="Node2D" parent="." index="1"]
 
+visible = false
 script = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
