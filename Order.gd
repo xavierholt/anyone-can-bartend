@@ -39,6 +39,7 @@ func fulfill():
 func tick():
 	if remaining <= 0:
 		#TODO: Complain!
+		get_node("/root/Bar/Posters/GoldStars").add_star()
 		print("Order timed out! :(")
 		queue_free()
 		return

@@ -32,5 +32,7 @@ shape = SubResource( 1 )
 visible = false
 script = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
+w = 50
+h = 200
 
 
