@@ -29,14 +29,31 @@
 
 script = ExtResource( 1 )
 
-[node name="Background" type="Sprite" parent="." index="0"]
+[node name="Timers" type="Node" parent="." index="0"]
+
+[node name="LevelTimer" type="Timer" parent="Timers" index="0"]
+
+process_mode = 1
+wait_time = 60.0
+one_shot = true
+autostart = true
+
+[node name="OrderTimer" type="Timer" parent="Timers" index="1"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = true
+
+[node name="Background" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Offset" ]
 
-[node name="Bases" type="Node2D" parent="." index="1"]
+[node name="Bases" type="Node2D" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 45, 250 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
@@ -73,7 +90,7 @@ centered = false
 offset = Vector2( -50, -193 )
 script = ExtResource( 5 )
 _sections_unfolded = [ "Offset" ]
-color = Color( 0.5, 0.5, 0.5, 1 )
+color = Color( 0.491935, 0.988092, 1, 0.12549 )
 fluid = "gin"
 
 [node name="Slot4" parent="Bases" index="3" instance=ExtResource( 3 )]
@@ -166,8 +183,9 @@ fluid = "scotch"
 position = Vector2( 450, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Mixers" type="Node2D" parent="." index="2"]
+[node name="Mixers" type="Node2D" parent="." index="3"]
 
+editor/display_folded = true
 position = Vector2( 45, 500 )
 _sections_unfolded = [ "Transform" ]
 
@@ -183,7 +201,7 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 5 )
 _sections_unfolded = [ "Offset" ]
-color = Color( 0.5, 0.5, 0.5, 1 )
+color = Color( 1, 0, 0, 0.901961 )
 fluid = "campari"
 
 [node name="Slot2" parent="Mixers" index="1" instance=ExtResource( 3 )]
@@ -279,7 +297,7 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 5 )
 _sections_unfolded = [ "Offset" ]
-color = Color( 0.5, 0.5, 0.5, 1 )
+color = Color( 0.898438, 0.479182, 0.410576, 0.501961 )
 fluid = "sweet vermouth"
 
 [node name="Slot8" parent="Mixers" index="7" instance=ExtResource( 3 )]
@@ -321,7 +339,6 @@ fluid = "cola"
 
 [node name="Slot11" parent="Mixers" index="10" instance=ExtResource( 3 )]
 
-editor/display_folded = true
 position = Vector2( 500, 0 )
 _sections_unfolded = [ "Transform" ]
 
@@ -332,12 +349,12 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 5 )
 _sections_unfolded = [ "Offset" ]
-color = Color( 0.5, 0.5, 0.5, 1 )
+color = Color( 0.467742, 0.600806, 1, 0.0941176 )
 fluid = "soda water"
 
-[node name="Counter" type="Node2D" parent="." index="3"]
+[node name="Counter" type="Node2D" parent="." index="4"]
 
-[node name="TrashTray" type="Node2D" parent="." index="4"]
+[node name="TrashTray" type="Node2D" parent="." index="5"]
 
 editor/display_folded = true
 position = Vector2( 50, 800 )
@@ -357,7 +374,7 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 160, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ServeTray" type="Node2D" parent="." index="5"]
+[node name="ServeTray" type="Node2D" parent="." index="6"]
 
 editor/display_folded = true
 position = Vector2( 1230, 800 )
@@ -377,17 +394,17 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 160, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Store" parent="." index="6" instance=ExtResource( 22 )]
+[node name="Store" parent="." index="7" instance=ExtResource( 22 )]
 
 position = Vector2( 544, 272 )
 sname = "Glass"
 
-[node name="Cursor" type="Node2D" parent="." index="7"]
+[node name="Cursor" type="Node2D" parent="." index="8"]
 
 script = ExtResource( 23 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="MarginContainer" type="MarginContainer" parent="." index="8"]
+[node name="MarginContainer" type="MarginContainer" parent="." index="9"]
 
 anchor_left = 1.0
 anchor_top = 0.0
