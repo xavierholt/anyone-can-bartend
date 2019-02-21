@@ -68,6 +68,10 @@ func _physics_process(delta):
 	if pouring and source:
 		source.pour(target)
 
+func start():
+	get_node("Timers/OrderTimer").start()
+	get_node("Timers/LevelTimer").start()
+
 func click(slot):
 	target = slot.item()
 	if not target:

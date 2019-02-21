@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Bar.gd" type="Script" id=1]
 [ext_resource path="res://Bricks2.png" type="Texture" id=2]
@@ -49,13 +49,14 @@
 [ext_resource path="res://Cover.gd" type="Script" id=47]
 [ext_resource path="res://Splash.png" type="Texture" id=48]
 [ext_resource path="res://Anyone Can Bartend.png" type="Texture" id=49]
+[ext_resource path="res://TitleClick.gd" type="Script" id=50]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 50, 50 )
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 
 resource_name = "Trash"
 length = 10.0
@@ -91,14 +92,13 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 60, 30 )
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=4]
 
-resource_name = "Serve"
 length = 1.4
 loop = false
 step = 0.1
@@ -132,27 +132,30 @@ tracks/1/keys = {
 } ]
 }
 
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 1000, 1000 )
+
 [node name="Bar" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
 [node name="Timers" type="Node" parent="." index="0"]
 
-editor/display_folded = true
-
 [node name="LevelTimer" type="Timer" parent="Timers" index="0"]
 
 process_mode = 1
 wait_time = 300.0
 one_shot = true
-autostart = true
+autostart = false
 
 [node name="OrderTimer" type="Timer" parent="Timers" index="1"]
 
 process_mode = 1
 wait_time = 1.0
 one_shot = false
-autostart = true
+autostart = false
 
 [node name="Background" type="Sprite" parent="." index="1"]
 
@@ -763,7 +766,7 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/Trash = SubResource( 3 )
+anims/Trash = SubResource( 2 )
 blend_times = [  ]
 
 [node name="Arrow" type="Node2D" parent="TrashTray" index="1"]
@@ -785,7 +788,7 @@ script = ExtResource( 42 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TrashTray/Arrow/Area2D" index="0"]
 
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="TrashTray/Arrow" index="1"]
 
@@ -839,7 +842,7 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/Serve = SubResource( 2 )
+anims/Serve = SubResource( 4 )
 blend_times = [  ]
 
 [node name="Recipes" type="Node2D" parent="." index="9"]
@@ -896,6 +899,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Cover" type="Node2D" parent="." index="13"]
 
+editor/display_folded = true
 position = Vector2( -2, 0 )
 script = ExtResource( 47 )
 
@@ -910,5 +914,22 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 775, 582 )
 texture = ExtResource( 49 )
+
+[node name="Area2D" type="Area2D" parent="Cover" index="2"]
+
+position = Vector2( 720, 450 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 50 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cover/Area2D" index="0"]
+
+shape = SubResource( 5 )
 
 
