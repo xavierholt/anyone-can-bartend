@@ -12,8 +12,10 @@ func _draw():
 
 func add_star():
 	var s = scene.instance()
-	var x = (stars % 10) * 20 + 7 + randi() % 6
-	var y = (stars / 10) * 20 + 7 + randi() % 6
+#	var t = load("res://Decals/Star" + str(randi() % 9 + 1) + ".png")
+#	s.set_texture(t)
+	var x = (stars % 10) * 20 + 10 + randi() % 10
+	var y = (stars / 10) * 20 + 10 + randi() % 10
 	
 	add_child(s)
 	s.position = Vector2(x, y)

@@ -1,7 +1,7 @@
 extends Button
 
 var recipe
-var remaining = 10
+var remaining = 5
 var threshold = 5
 
 func _ready():
@@ -40,7 +40,6 @@ func tick():
 	if remaining <= 0:
 		#TODO: Complain!
 		get_node("/root/Bar/Posters/GoldStars").add_star()
-		print("Order timed out! :(")
 		queue_free()
 		return
 	remaining -= 1

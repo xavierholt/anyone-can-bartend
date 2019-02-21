@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Bar.gd" type="Script" id=1]
 [ext_resource path="res://Bricks2.png" type="Texture" id=2]
@@ -33,9 +33,10 @@
 [ext_resource path="res://Bottles/Soda Water.png" type="Texture" id=31]
 [ext_resource path="res://Shelves/Red Tray.png" type="Texture" id=32]
 [ext_resource path="res://Shelves/Blue Tray.png" type="Texture" id=33]
-[ext_resource path="res://Store.tscn" type="PackedScene" id=34]
-[ext_resource path="res://Cursor.gd" type="Script" id=35]
-[ext_resource path="res://Order.tscn" type="PackedScene" id=36]
+[ext_resource path="res://Shelves/Counter.png" type="Texture" id=34]
+[ext_resource path="res://Store.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Cursor.gd" type="Script" id=36]
+[ext_resource path="res://Order.tscn" type="PackedScene" id=37]
 
 [node name="Bar" type="Node" index="0"]
 
@@ -72,7 +73,7 @@ editor/display_folded = true
 
 [node name="GoldStars" type="Node2D" parent="Posters" index="0"]
 
-position = Vector2( 963, 222 )
+position = Vector2( 1020, 243 )
 rotation = 0.0872665
 script = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
@@ -119,7 +120,7 @@ texture = ExtResource( 10 )
 [node name="Bases" type="Node2D" parent="." index="4"]
 
 editor/display_folded = true
-position = Vector2( 45, 250 )
+position = Vector2( 45, 220 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Slot1" parent="Bases" index="0" instance=ExtResource( 11 )]
@@ -139,10 +140,11 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot3" parent="Bases" index="2" instance=ExtResource( 11 )]
 
-editor/display_folded = true
 position = Vector2( 100, 0 )
 _sections_unfolded = [ "Transform" ]
 
@@ -153,6 +155,8 @@ centered = false
 offset = Vector2( -50, -193 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.620968, 1, 0.973349, 0.25 )
+fluid = "gin"
 
 [node name="Slot4" parent="Bases" index="3" instance=ExtResource( 11 )]
 
@@ -167,6 +171,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot5" parent="Bases" index="4" instance=ExtResource( 11 )]
 
@@ -181,6 +187,8 @@ centered = false
 offset = Vector2( -50, -190 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot6" parent="Bases" index="5" instance=ExtResource( 11 )]
 
@@ -195,6 +203,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot7" parent="Bases" index="6" instance=ExtResource( 11 )]
 
@@ -209,6 +219,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot8" parent="Bases" index="7" instance=ExtResource( 11 )]
 
@@ -223,6 +235,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot9" parent="Bases" index="8" instance=ExtResource( 11 )]
 
@@ -237,6 +251,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot10" parent="Bases" index="9" instance=ExtResource( 11 )]
 
@@ -246,7 +262,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Mixers" type="Node2D" parent="." index="5"]
 
 editor/display_folded = true
-position = Vector2( 45, 500 )
+position = Vector2( 45, 450 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Slot1" parent="Mixers" index="0" instance=ExtResource( 11 )]
@@ -261,6 +277,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 1, 0, 0, 0.85 )
+fluid = "campari"
 
 [node name="Slot2" parent="Mixers" index="1" instance=ExtResource( 11 )]
 
@@ -275,6 +293,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot3" parent="Mixers" index="2" instance=ExtResource( 11 )]
 
@@ -289,6 +309,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot4" parent="Mixers" index="3" instance=ExtResource( 11 )]
 
@@ -303,6 +325,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot5" parent="Mixers" index="4" instance=ExtResource( 11 )]
 
@@ -317,10 +341,11 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Transform" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot6" parent="Mixers" index="5" instance=ExtResource( 11 )]
 
-editor/display_folded = true
 position = Vector2( 250, 0 )
 _sections_unfolded = [ "Transform" ]
 
@@ -331,10 +356,11 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 1, 0.513441, 0.513441, 0.51502 )
+fluid = "dry vermouth"
 
 [node name="Slot7" parent="Mixers" index="6" instance=ExtResource( 11 )]
 
-editor/display_folded = true
 position = Vector2( 300, 0 )
 _sections_unfolded = [ "Transform" ]
 
@@ -345,6 +371,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 1, 0.516129, 0.516129, 0.52498 )
+fluid = "sweet vermouth"
 
 [node name="Slot8" parent="Mixers" index="7" instance=ExtResource( 11 )]
 
@@ -359,6 +387,8 @@ centered = false
 offset = Vector2( -50, -190 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot9" parent="Mixers" index="8" instance=ExtResource( 11 )]
 
@@ -373,6 +403,8 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot10" parent="Mixers" index="9" instance=ExtResource( 11 )]
 
@@ -387,6 +419,8 @@ centered = false
 offset = Vector2( -50, -198 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Transform" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Slot11" parent="Mixers" index="10" instance=ExtResource( 11 )]
 
@@ -400,8 +434,86 @@ centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
+color = Color( 0.5, 0.5, 0.5, 1 )
+fluid = "fluid"
 
 [node name="Counter" type="Node2D" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 350, 825 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot1" parent="Counter" index="0" instance=ExtResource( 11 )]
+
+[node name="Slot2" parent="Counter" index="1" instance=ExtResource( 11 )]
+
+position = Vector2( 50, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot3" parent="Counter" index="2" instance=ExtResource( 11 )]
+
+position = Vector2( 100, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot4" parent="Counter" index="3" instance=ExtResource( 11 )]
+
+position = Vector2( 150, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot5" parent="Counter" index="4" instance=ExtResource( 11 )]
+
+position = Vector2( 200, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot6" parent="Counter" index="5" instance=ExtResource( 11 )]
+
+position = Vector2( 250, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot7" parent="Counter" index="6" instance=ExtResource( 11 )]
+
+position = Vector2( 300, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot8" parent="Counter" index="7" instance=ExtResource( 11 )]
+
+position = Vector2( 350, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot9" parent="Counter" index="8" instance=ExtResource( 11 )]
+
+position = Vector2( 400, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot10" parent="Counter" index="9" instance=ExtResource( 11 )]
+
+position = Vector2( 450, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot11" parent="Counter" index="10" instance=ExtResource( 11 )]
+
+position = Vector2( 500, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot12" parent="Counter" index="11" instance=ExtResource( 11 )]
+
+position = Vector2( 550, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot13" parent="Counter" index="12" instance=ExtResource( 11 )]
+
+position = Vector2( 600, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot14" parent="Counter" index="13" instance=ExtResource( 11 )]
+
+position = Vector2( 650, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Slot15" parent="Counter" index="14" instance=ExtResource( 11 )]
+
+position = Vector2( 700, 0 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="TrashTray" type="Node2D" parent="." index="7"]
 
@@ -483,21 +595,28 @@ position = Vector2( -10, 0 )
 texture = ExtResource( 33 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Store" parent="." index="9" instance=ExtResource( 34 )]
+[node name="Counter2" type="Sprite" parent="." index="9"]
+
+position = Vector2( 0, 805 )
+texture = ExtResource( 34 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Store" parent="." index="10" instance=ExtResource( 35 )]
 
 position = Vector2( 544, 272 )
 sname = "Glass"
 
-[node name="Cursor" type="Node2D" parent="." index="10"]
+[node name="Cursor" type="Node2D" parent="." index="11"]
 
 editor/display_folded = true
 position = Vector2( 0, -1 )
-script = ExtResource( 35 )
+script = ExtResource( 36 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Holder" type="Node2D" parent="Cursor" index="0"]
 
-[node name="MarginContainer" type="MarginContainer" parent="." index="11"]
+[node name="MarginContainer" type="MarginContainer" parent="." index="12"]
 
 editor/display_folded = true
 anchor_left = 1.0
@@ -534,17 +653,17 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="Button1" parent="MarginContainer/VBoxContainer" index="0" instance=ExtResource( 36 )]
+[node name="Button1" parent="MarginContainer/VBoxContainer" index="0" instance=ExtResource( 37 )]
 
 margin_right = 110.0
 
-[node name="Button2" parent="MarginContainer/VBoxContainer" index="1" instance=ExtResource( 36 )]
+[node name="Button2" parent="MarginContainer/VBoxContainer" index="1" instance=ExtResource( 37 )]
 
 margin_top = 24.0
 margin_right = 110.0
 margin_bottom = 44.0
 
-[node name="Button3" parent="MarginContainer/VBoxContainer" index="2" instance=ExtResource( 36 )]
+[node name="Button3" parent="MarginContainer/VBoxContainer" index="2" instance=ExtResource( 37 )]
 
 margin_top = 48.0
 margin_right = 110.0
