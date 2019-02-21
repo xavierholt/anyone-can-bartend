@@ -17,7 +17,7 @@ func _pressed():
 	fulfill()
 
 func fulfill():
-	var s = get_node("/root/Bar/ServeTray")
+	var s = get_node("/root/Bar/ServeTray/Slots")
 	var drinks = []
 	for slot in s.get_children():
 		var i = slot.get_node("Click").item()

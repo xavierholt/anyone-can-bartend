@@ -6,5 +6,5 @@ func _input_event(viewport, event, shape):
 			var bar = get_node("/root/Bar")
 			if bar.source == null:
 				var new = get_parent().scene.instance()
-				bar.get_node("Cursor").add_child(new)
+				bar.get_node("Cursor").grab(new)
 				bar.source = new

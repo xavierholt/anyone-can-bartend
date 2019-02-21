@@ -34,20 +34,19 @@ func _physics_process(delta):
 func click(slot):
 	target = slot.item()
 	if not target:
-		cursor.remove_child(source)
-		slot.get_parent().add_child(source)
+		cursor.drop(slot)
 		source = null
 	elif not source:
-		slot.get_parent().remove_child(target)
-		cursor.add_child(target)
+		cursor.grab(target)
 		source = target
 		target = null
 	elif target.target:
-		print("Pouring...")
 		pouring = true
+		cursor.pour()
 
 func unclick(slot):
 	pouring = false
+	cursor.unpour()
 
 func done():
 	print("Level complete!")
@@ -55,7 +54,6 @@ func done():
 
 func tick():
 	if randf() < 0.2:
-		print("Making an order...")
 		var o = Order.instance()
 		var v = get_node("MarginContainer/VBoxContainer")
 		v.add_child(o)
