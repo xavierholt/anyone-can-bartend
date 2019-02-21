@@ -6,6 +6,7 @@ export (int) var columns  = 8
 
 var decals = 0
 var star   = load("res://Star.tscn")
+var okay   = load("res://Okay.tscn")
 var fail   = load("res://Fail.tscn")
 
 func add(decal):
@@ -19,6 +20,9 @@ func add(decal):
 
 func add_fail():
 	add(fail.instance())
+
+func add_okay():
+	add(okay.instance())
 
 func add_star():
 	add(star.instance())

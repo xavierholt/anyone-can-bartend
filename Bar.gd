@@ -90,7 +90,8 @@ func done():
 	get_tree().quit()
 
 func tick():
-	if randf() < 0.2:
+	var v = get_node("MarginContainer/VBoxContainer")
+	var n = v.get_child_count()
+	if randf() < 0.8 - 0.2 * n:
 		var o = Order.instance()
-		var v = get_node("MarginContainer/VBoxContainer")
 		v.add_child(o)
