@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Bar.gd" type="Script" id=1]
 [ext_resource path="res://Bricks2.png" type="Texture" id=2]
@@ -21,23 +21,25 @@
 [ext_resource path="res://Bottles/White Rum.png" type="Texture" id=19]
 [ext_resource path="res://Bottles/Bourbon.png" type="Texture" id=20]
 [ext_resource path="res://Bottles/Scotch.png" type="Texture" id=21]
-[ext_resource path="res://Bottles/Campari.png" type="Texture" id=22]
-[ext_resource path="res://Bottles/Kahlua.png" type="Texture" id=23]
-[ext_resource path="res://Bottles/Triple Sec.png" type="Texture" id=24]
-[ext_resource path="res://Bottles/Maraschino.png" type="Texture" id=25]
-[ext_resource path="res://Bottles/Amaretto.png" type="Texture" id=26]
-[ext_resource path="res://Bottles/Dry Vermouth.png" type="Texture" id=27]
-[ext_resource path="res://Bottles/Sweet Vermouth.png" type="Texture" id=28]
-[ext_resource path="res://Bottles/Apricot Brandy.png" type="Texture" id=29]
-[ext_resource path="res://Bottles/Ginger Ale.png" type="Texture" id=30]
-[ext_resource path="res://Bottles/Cola.png" type="Texture" id=31]
-[ext_resource path="res://Bottles/Soda Water.png" type="Texture" id=32]
-[ext_resource path="res://Shelves/Red Tray.png" type="Texture" id=33]
-[ext_resource path="res://Shelves/Blue Tray.png" type="Texture" id=34]
-[ext_resource path="res://Shelves/Counter.png" type="Texture" id=35]
-[ext_resource path="res://Store.tscn" type="PackedScene" id=36]
-[ext_resource path="res://Cursor.gd" type="Script" id=37]
-[ext_resource path="res://Order.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Shelves/Top Shelf.png" type="Texture" id=22]
+[ext_resource path="res://Bottles/Campari.png" type="Texture" id=23]
+[ext_resource path="res://Bottles/Kahlua.png" type="Texture" id=24]
+[ext_resource path="res://Bottles/Triple Sec.png" type="Texture" id=25]
+[ext_resource path="res://Bottles/Maraschino.png" type="Texture" id=26]
+[ext_resource path="res://Bottles/Amaretto.png" type="Texture" id=27]
+[ext_resource path="res://Bottles/Dry Vermouth.png" type="Texture" id=28]
+[ext_resource path="res://Bottles/Sweet Vermouth.png" type="Texture" id=29]
+[ext_resource path="res://Bottles/Apricot Brandy.png" type="Texture" id=30]
+[ext_resource path="res://Bottles/Ginger Ale.png" type="Texture" id=31]
+[ext_resource path="res://Bottles/Cola.png" type="Texture" id=32]
+[ext_resource path="res://Bottles/Soda Water.png" type="Texture" id=33]
+[ext_resource path="res://Shelves/Bottom Shelf.png" type="Texture" id=34]
+[ext_resource path="res://Shelves/Red Tray.png" type="Texture" id=35]
+[ext_resource path="res://Shelves/Blue Tray.png" type="Texture" id=36]
+[ext_resource path="res://Shelves/Counter.png" type="Texture" id=37]
+[ext_resource path="res://Store.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Cursor.gd" type="Script" id=39]
+[ext_resource path="res://Order.tscn" type="PackedScene" id=40]
 
 [node name="Bar" type="Node" index="0"]
 
@@ -125,6 +127,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Slot1" parent="Bases" index="0" instance=ExtResource( 11 )]
 
+editor/display_folded = true
 _sections_unfolded = [ "Transform" ]
 
 [node name="Irish Whisky" type="Sprite" parent="Bases/Slot1" index="2"]
@@ -163,7 +166,7 @@ _sections_unfolded = [ "Transform" ]
 
 texture = ExtResource( 15 )
 centered = false
-offset = Vector2( -50, -193 )
+offset = Vector2( -50, -190 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
 color = Color( 0.620968, 1, 0.973349, 0.25 )
@@ -270,9 +273,15 @@ fluid = "fluid"
 position = Vector2( 450, 0 )
 _sections_unfolded = [ "Transform" ]
 
+[node name="Shelf" type="Sprite" parent="Bases" index="10"]
+
+position = Vector2( -900, -10 )
+texture = ExtResource( 22 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
 [node name="Mixers" type="Node2D" parent="." index="5"]
 
-editor/display_folded = true
 position = Vector2( 45, 450 )
 _sections_unfolded = [ "Transform" ]
 
@@ -283,9 +292,9 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Campari" type="Sprite" parent="Mixers/Slot1" index="2"]
 
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 centered = false
-offset = Vector2( -50, -195 )
+offset = Vector2( -50, -193 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
 color = Color( 1, 0, 0, 0.85 )
@@ -299,7 +308,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Kahlua" type="Sprite" parent="Mixers/Slot2" index="2"]
 
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
@@ -315,7 +324,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Triple Sec" type="Sprite" parent="Mixers/Slot3" index="2"]
 
-texture = ExtResource( 24 )
+texture = ExtResource( 25 )
 centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
@@ -331,7 +340,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Maraschino" type="Sprite" parent="Mixers/Slot4" index="2"]
 
-texture = ExtResource( 25 )
+texture = ExtResource( 26 )
 centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
@@ -347,7 +356,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Amaretto" type="Sprite" parent="Mixers/Slot5" index="2"]
 
-texture = ExtResource( 26 )
+texture = ExtResource( 27 )
 centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
@@ -357,12 +366,13 @@ fluid = "fluid"
 
 [node name="Slot6" parent="Mixers" index="5" instance=ExtResource( 11 )]
 
+editor/display_folded = true
 position = Vector2( 250, 0 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Dry Vermouth" type="Sprite" parent="Mixers/Slot6" index="2"]
 
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
@@ -372,12 +382,13 @@ fluid = "dry vermouth"
 
 [node name="Slot7" parent="Mixers" index="6" instance=ExtResource( 11 )]
 
+editor/display_folded = true
 position = Vector2( 300, 0 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Sweet Vermouth" type="Sprite" parent="Mixers/Slot7" index="2"]
 
-texture = ExtResource( 28 )
+texture = ExtResource( 29 )
 centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
@@ -393,7 +404,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Apricot Brandy" type="Sprite" parent="Mixers/Slot8" index="2"]
 
-texture = ExtResource( 29 )
+texture = ExtResource( 30 )
 centered = false
 offset = Vector2( -50, -190 )
 script = ExtResource( 13 )
@@ -409,7 +420,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Ginger Ale" type="Sprite" parent="Mixers/Slot9" index="2"]
 
-texture = ExtResource( 30 )
+texture = ExtResource( 31 )
 centered = false
 offset = Vector2( -50, -195 )
 script = ExtResource( 13 )
@@ -425,7 +436,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Cola" type="Sprite" parent="Mixers/Slot10" index="2"]
 
-texture = ExtResource( 31 )
+texture = ExtResource( 32 )
 centered = false
 offset = Vector2( -50, -198 )
 script = ExtResource( 13 )
@@ -440,13 +451,20 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Soda Water" type="Sprite" parent="Mixers/Slot11" index="2"]
 
-texture = ExtResource( 32 )
+texture = ExtResource( 33 )
 centered = false
-offset = Vector2( -50, -195 )
+offset = Vector2( -50, -193 )
 script = ExtResource( 13 )
 _sections_unfolded = [ "Offset" ]
 color = Color( 0.5, 0.5, 0.5, 1 )
 fluid = "fluid"
+
+[node name="Shelf" type="Sprite" parent="Mixers" index="11"]
+
+position = Vector2( -800, -10 )
+texture = ExtResource( 34 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Counter" type="Node2D" parent="." index="6"]
 
@@ -563,7 +581,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="TrashTray" index="1"]
 
 position = Vector2( -10, 0 )
-texture = ExtResource( 33 )
+texture = ExtResource( 35 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="ServeTray" type="Node2D" parent="." index="8"]
@@ -603,26 +621,26 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="ServeTray" index="1"]
 
 position = Vector2( -10, 0 )
-texture = ExtResource( 34 )
+texture = ExtResource( 36 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Counter2" type="Sprite" parent="." index="9"]
 
 position = Vector2( 0, 812 )
-texture = ExtResource( 35 )
+texture = ExtResource( 37 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="Store" parent="." index="10" instance=ExtResource( 36 )]
+[node name="Store" parent="." index="10" instance=ExtResource( 38 )]
 
-position = Vector2( 544, 272 )
+position = Vector2( 751, 530 )
 sname = "Glass"
 
 [node name="Cursor" type="Node2D" parent="." index="11"]
 
 editor/display_folded = true
 position = Vector2( 0, -1 )
-script = ExtResource( 37 )
+script = ExtResource( 39 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Holder" type="Node2D" parent="Cursor" index="0"]
@@ -664,17 +682,17 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="Button1" parent="MarginContainer/VBoxContainer" index="0" instance=ExtResource( 38 )]
+[node name="Button1" parent="MarginContainer/VBoxContainer" index="0" instance=ExtResource( 40 )]
 
 margin_right = 110.0
 
-[node name="Button2" parent="MarginContainer/VBoxContainer" index="1" instance=ExtResource( 38 )]
+[node name="Button2" parent="MarginContainer/VBoxContainer" index="1" instance=ExtResource( 40 )]
 
 margin_top = 24.0
 margin_right = 110.0
 margin_bottom = 44.0
 
-[node name="Button3" parent="MarginContainer/VBoxContainer" index="2" instance=ExtResource( 38 )]
+[node name="Button3" parent="MarginContainer/VBoxContainer" index="2" instance=ExtResource( 40 )]
 
 margin_top = 48.0
 margin_right = 110.0
