@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://NewWorldOrder.gd" type="Script" id=1]
-[ext_resource path="res://Panels/Paper1.png" type="Texture" id=2]
+[ext_resource path="res://Panels/Paper2.png" type="Texture" id=2]
 
 [sub_resource type="StyleBoxTexture" id=1]
 
@@ -10,7 +10,7 @@ content_margin_right = 20.0
 content_margin_top = 20.0
 content_margin_bottom = 20.0
 texture = ExtResource( 2 )
-region_rect = Rect2( 0, 0, 300, 300 )
+region_rect = Rect2( 0, 0, 200, 200 )
 margin_left = 0.0
 margin_right = 0.0
 margin_top = 0.0
