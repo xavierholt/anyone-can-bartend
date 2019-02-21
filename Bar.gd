@@ -65,7 +65,8 @@ func _ready():
 		i += 1
 
 func _physics_process(delta):
-	if pouring: source.pour(target)
+	if pouring and source:
+		source.pour(target)
 
 func click(slot):
 	target = slot.item()

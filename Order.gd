@@ -16,6 +16,17 @@ func _ready():
 func _pressed():
 	fulfill()
 
+func score(drink):
+	var post = get_node("/root/Bar/Posters/Correctness")
+	var list = recipe.map(drink)
+	for k in list.data:
+		if not recipe.fluids.has(k):
+			post.add_fail()
+			continue
+		var p = abs(list.get(k) / recipe.fluids[k])
+		if p < 0.1: post.add_star()
+		if p > 0.6: post.add_fail()
+
 func fulfill():
 	var s = get_node("/root/Bar/ServeTray/Slots")
 	var drinks = []
@@ -28,18 +39,18 @@ func fulfill():
 	if len(drinks) != 1:
 		print("Only deliver one drink at at time!")
 		return
+	if remaining >= threshold:
+		get_node("/root/Bar/Posters/Timeliness").add_star()
 	for k in drinks[0].fluids:
 		print(k + ": " + str(drinks[0].fluids[k]))
-	var score = recipe.score(drinks[0])
-	print("Order fulfilled! :)")
-	print(" - " + recipe.name + ": " + str(score) + " stars")
+	score(drinks[0])
 	drinks[0].queue_free()
 	queue_free()
 
 func tick():
 	if remaining <= 0:
 		#TODO: Complain!
-		get_node("/root/Bar/Posters/Timeliness").add_star()
+		get_node("/root/Bar/Posters/Timeliness").add_fail()
 		queue_free()
 		return
 	remaining -= 1
