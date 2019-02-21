@@ -42,6 +42,7 @@ var recipes = [
 ]
 
 func _ready():
+	randomize()
 	cursor = get_node("Cursor")
 	print(OS.get_screen_size())
 	

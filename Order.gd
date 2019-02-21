@@ -39,7 +39,7 @@ func fulfill():
 func tick():
 	if remaining <= 0:
 		#TODO: Complain!
-		get_node("/root/Bar/Posters/GoldStars").add_star()
+		get_node("/root/Bar/Posters/Timeliness").add_star()
 		queue_free()
 		return
 	remaining -= 1
