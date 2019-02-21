@@ -122,6 +122,7 @@ texture = ExtResource( 10 )
 
 [node name="Bases" type="Node2D" parent="." index="4"]
 
+editor/display_folded = true
 position = Vector2( 45, 220 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
@@ -282,6 +283,7 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Mixers" type="Node2D" parent="." index="5"]
 
+editor/display_folded = true
 position = Vector2( 45, 450 )
 _sections_unfolded = [ "Transform" ]
 
@@ -446,6 +448,7 @@ fluid = "fluid"
 
 [node name="Slot11" parent="Mixers" index="10" instance=ExtResource( 11 )]
 
+editor/display_folded = true
 position = Vector2( 500, 0 )
 _sections_unfolded = [ "Transform" ]
 
@@ -631,12 +634,17 @@ texture = ExtResource( 37 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="Store" parent="." index="10" instance=ExtResource( 38 )]
+[node name="Recipes" type="Node2D" parent="." index="10"]
+
+position = Vector2( 50, 500 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Store" parent="." index="11" instance=ExtResource( 38 )]
 
 position = Vector2( 751, 530 )
 sname = "Glass"
 
-[node name="Cursor" type="Node2D" parent="." index="11"]
+[node name="Cursor" type="Node2D" parent="." index="12"]
 
 editor/display_folded = true
 position = Vector2( 0, -1 )
@@ -645,7 +653,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Holder" type="Node2D" parent="Cursor" index="0"]
 
-[node name="MarginContainer" type="MarginContainer" parent="." index="12"]
+[node name="MarginContainer" type="MarginContainer" parent="." index="13"]
 
 editor/display_folded = true
 anchor_left = 1.0
